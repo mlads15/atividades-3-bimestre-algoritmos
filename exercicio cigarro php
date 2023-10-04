@@ -1,0 +1,18 @@
+<?php
+
+$numcigarros = 100;
+$perda_vida = 11;
+$tempo_fumo = 0;
+$dias_perdidos = 0;
+$tempo_perdido = 0;
+
+$tempo_fumo = readline("Há quantos anos você é usuário do cigarro? ");
+
+$cigarros_fumados = $numcigarros * 365 * $tempo_fumo;
+$tempo_perdido = $cigarros_fumados * $perda_vida;
+$dias_perdidos = $tempo_perdido / 60 / 24;
+round($dias_perdidos, 10);
+
+print("Você perderá $dias_perdidos dias de vida após fumar tanto :D.\n");
+
+?>
