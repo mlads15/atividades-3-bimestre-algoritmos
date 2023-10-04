@@ -1,0 +1,11 @@
+<?php
+
+	$visitante = "anonimo";
+
+	//$visitante = readline("OlÁ, viSItantE! EscCREva o sEU nOMEe: ");
+
+	$visitante = $_REQUEST('visitante');
+
+	print "BbEM vINdOo $visitante";
+
+?>
