@@ -1,0 +1,16 @@
+<h1>Safadômetro</h1>
+
+<form>
+
+    <input type="text" placeholder= "Infome o dia do seu aniversário">
+    <br />
+
+    <input type="text" placeholder= "Informe o mês do seu aniversário">
+    <br />
+
+    <input type="text" placeholder= "Informe o ano em que você nasceu">
+    <br />
+
+    <input type="submit" value= "Calcular">
+
+</form>
