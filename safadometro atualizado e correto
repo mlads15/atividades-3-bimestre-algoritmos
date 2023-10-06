@@ -1,0 +1,36 @@
+<?php
+
+
+    $somatorio;
+    $safadeza;
+    $anjo;
+
+    $dia = readline("Em qual dia você nasceu? ");
+    $mes = readline("Em qual mês você nasceu? ");
+    $ano = readline("Em que ano você nasceu? ");
+
+    safadometro($dia, $mes, $ano);
+
+function safadometro(int $dia, int $mes, int $ano){
+
+    $safadeza = somatorio($mes) + ($ano / 100) * (50 - $dia);
+    $anjo = 100 - $safadeza;
+
+    print("Seu nível de anjo é: $anjo% e seu nível de safadeza é: $safadeza%.\n");
+
+}
+
+
+
+function somatorio(int $mes){
+    
+    $soma = 0;
+
+    $soma = $mes * (($mes + 1)/2);
+
+    return $soma;
+    
+}
+
+
+?>
