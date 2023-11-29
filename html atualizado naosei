@@ -1,0 +1,110 @@
+<?php
+
+    //include 'logica.php'
+
+    $pokemons_api = file_get_contents('https://pokeapi.co/api/v2/pokemon');
+
+    $pokemons = json_decode($pokemons_api, true);
+
+    for ($i=0; $i < 20; $i++) { 
+        $pokemon = $pokemons['result'][$i];
+
+        $pokemons_api = file_get_contents($pokemon['url']);
+
+        $pokemons = json_decode($todas_infos_api, true);
+    }
+
+    $pokemon = [
+        'Rebechu',
+        'Raichu',
+        'Luiduck',
+        'Sachu',
+        'Bicha',
+        'Bichu',
+        'Keychu',
+        'Chuu',
+        'Haechu',
+        'Renchu',
+        'Dochu',
+        'Taechu',
+        'Rainchu',
+        'Copiachu',
+        'Terzochu',
+        'Swisschu',
+        'Phantomchuu',
+        'Aurorachuu',
+        'Cirruschu',
+        'Sodochu',
+        'Cumuluschu',
+        'Mountainchuu',
+    ]
+
+    ?>
+
+
+<html>
+
+<head>
+    <title>Pokemon</title>
+
+    <style>
+
+        #pesquisa
+        {
+            background: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pokemon {
+            width: 20%;
+            border: solid 2px #FF6EC7;
+            padding: 15px;
+            float: left;
+        }
+            
+        .pokemon img {
+            max-width: 100%;
+        }
+
+    </style>
+
+</head>
+
+    <body>
+    
+        <div id="pesquisa">
+
+            <form>
+                <input type="text" placeholder="Digite o nome de um Pokémon:">
+                <input type="submit" value="Buscar:">
+            </form>
+        
+        </div>
+
+        <div id="Pokémon">
+
+        <?php for ($i=0; $i < 20; $i++){ ?>
+
+            <div class="pokemon">
+
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="Psyduck" width= "200px">
+
+                    <h1><?= $pokemon['results'][$i]['sprites']['other']['dream_world']['font_default']?></h1>
+                    <p>Peso: 19.6</p>
+                    <p>Altura: 0.8</p>
+        
+            </div>
+
+            <?php } ?>
+
+
+        </div>
+
+
+
+    </body>
+
+</html>
+
