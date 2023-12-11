@@ -1,0 +1,194 @@
+Exercício 1:
+
+Valor i:
+0, 1, 2
+Console:
+1-22-333
+
+
+Exercício 2:
+
+Valor i:
+0, 1, 2, 3, 4, 5, 6
+Console:
+1: Cristo Redentor
+2: Chichén Itzá
+3: Coliseu
+4: Muralha da China
+5: Petra
+6: Machu Picchu
+7: Taj Mahal
+
+
+Exercício 3:
+
+Valor i:
+0, 1, 2
+Console:
+O valor buscado está entre as maravilhas
+
+Exercício 4:
+
+Valor mega_sena[6]: [33, 4, 47, 7, 11, 25]; (inicial)
+[4, 33, 47, 7, 11, 25];
+[4, 33, 47, 7, 11, 25];
+[4, 33, 7, 47, 11, 25];
+[4, 33, 7, 11, 47, 25];
+[4, 33, 7, 11, 25, 47].
+
+[4, 33, 7, 11, 25, 47];
+[4, 7, 33, 11, 25, 47];
+[4, 7, 11, 33, 25, 47];
+[4, 7, 11, 33, 25, 47];
+[4, 7, 11, 25, 33, 47].
+
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47].
+
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47].
+
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47].
+
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47];
+[4, 7, 11, 25, 33, 47].
+
+Valor mega_sena[j]: 33, 4; 33; 47, 7; 47, 11; 47, 25.
+
+4; 33, 7; 33, 11; 33, 25; 25.
+
+4; 7; 11; 25; 33;
+
+4; 7; 11; 25; 33;
+
+4; 7; 11; 25; 33;
+
+4; 7; 11; 25; 33;
+
+Valor mega_sena[j + 1]: 4, 33; 47; 7, 47; 11, 47; 25, 47.
+
+33; 7, 33; 11, 33; 25, 33; 47.
+
+7; 11; 25; 33; 47.
+
+7; 11; 25; 33; 47.
+
+7; 11; 25; 33; 47.
+
+7; 11; 25; 33; 47.
+
+Valor aux: 33; 47; 47; 47.
+
+33; 33; 33; 
+
+Valor i: 0. 1. 2. 3. 4. 5
+Valor j: 0; 1; 2; 3; 4. 0; 1; 2; 3; 4. 0; 1; 2; 3; 4. 0; 1; 2; 3; 4. 0; 1; 2; 3; 4. 0; 1; 2; 3; 4.
+
+Console: 4 - 7 - 11 - 25 - 33 - 47
+
+Exercício 5:
+
+$matriz = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+];
+
+for ($i = 0; $i < 3; $i++){
+   for ($j = 0; $j < 3; $j++){
+   print "$matriz[i][j] ";
+   }
+print "\n";
+}
+
+Exercício 6:
+
+$matriz = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+];
+
+for ($i = 0; $i < 3; $i++){
+   $soma = $matriz[i][0] + $matriz[i][1] + $matriz[i][2];
+
+   $result[i] = $soma;
+}
+
+   $soma_todos = $result[0] + $result[1] + $result [2];
+
+   print "$soma_todos";
+
+Exercício 7: 
+
+$matriz
+
+for($i = 0; $i < 3; $i++){
+   for($i = 0; $i < 3; $i++){
+      $matriz[i][j] = readline("Digite um número: "
+      print "\n")
+   }
+}
+
+for($i = 0; $i < 3; $i++){
+   for($i = 0; $i < 3; $i++){
+      
+      if($matriz[i][j]%2 == 0){
+         print "Você digitou o número par $matriz[i][j] na linha $i e na coluna $j \n"
+      }
+   }
+}
+
+Exercício 8:
+
+Console: Teste 0 int(4)
+         Teste 1 bool(true)
+         Teste 2 bool(false)
+         Teste 3 int(3)
+         Teste 4 bool(true)
+         Teste 5 bool(true)
+
+Exercício 9:
+
+Console: Teste 0 int(5)
+         Teste 1 bool(true)
+         Teste 2 bool(false)
+         Teste 3 bool(false)
+         Teste 4 bool(true)
+         Teste 5 string(4) "nome"
+         Teste 6 string(8) "profissao"
+         Teste 7 bool(true)
+
+Exercício 10:
+
+$cadeia = readline("Diga uma frase: ");
+print "\n";
+$caracter = readline("Diga o caracter que deseja subtrair ");
+print "\n";
+
+tira_carater ($cadeia, $caracter);
+
+function tira_carater (&$cadeia, &$caracter){
+   $tamanho = mb_strlen($cadeia);
+
+   $cadeia = str_ireplace($caracter, "", $cadeia);
+
+   $tamanho_agora = mb_strlen($cadeia);
+   $numero_caracter = $tamanho - $tamanho_agora;
+
+   print "A frase agora é: $frase \n";
+   print "Foram retirados $numero_caracter caracteres \"$caracter\" da frase.";
+}
